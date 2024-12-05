@@ -7,35 +7,90 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
+    <meta name="description" content="Lens & Light Photography - Capturando momentos únicos e transformando em histórias visuais. Confira nossos trabalhos.">
+
     <title>Lens Light Photography</title>
 </head>
 
 <body>
+    <!--------------------------------------------// Menu Principal //------------------------------------------------------------------------------>
     <header class="cabecalho">
-        <a class="logo" href="#logo">Lens & Light Photography</a>
+        <!--------------------------------------------// Logo da empresa //------------------------------------------------------------------------------>
+        <a class="logo" href="#logo" aria-label="Página inicial - Lens & Light Photography">Lens & Light Photography</a>
+        <!--------------------------------------------// Menu de navegação //------------------------------------------------------------------------------>
         <nav>
             <ul class="menu">
-                <a href="#home"><li class="item-menu">Home</li></a>
-                <a href="#portfolio"><li class="item-menu">Portfolio</li></a>
-                <a href="#contatos"><li class="item-menu">Contato</li></a>
-            </ul>
-        </nav>
+                <li class="item-menu"><a href="#home" aria-label="Ir para a seção Home">Home</a></li>
+                <li class="item-menu"><a href="#portfolio" aria-label="Ir para o portfólio">Portfolio</a></li>
+                <li class="item-menu"><a href="#contatos" aria-label="Ir para a seção de contatos">Contato</a></li>
+            </ul>            
+        </nav>    
     </header>
+
     <section id="home" class="hero">
-        <img class="background-desktop" src="src/img/background-desktop.svg" alt="background-desktop">
+        <img class="background-desktop" src="src/img/background-desktop.svg" alt="Imagem de fundo do site - natureza e fotografia" />
         <h1>Capturando momentos que contam histórias</h1>
-        <button>Veja Meu Trabalho</button>
+        <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })">Veja Meu Trabalho</button>
     </section>
+
     <section id="portfolio" class="portfolio-section">
-        <h2>Meus trabalhos</h2>
+        <h2>Meus Trabalhos</h2>
+        
         <div class="card-01">
-            <img src="src/img/imagem-01.jpg" alt="imagem-01">
-            <p>Ensaio ao ar livre - Primavera 2023.</p>
+            <img src="src/img/imagem-01.jpg" alt="Pescadores puxando redes na praia ao amanhecer, com uma pequena embarcação e céu dourado ao fundo.">
+            <p>Pescadores puxando redes.</p>
         </div>
+
+        <div class="card-02">
+            <img src="src/img/imagem-02.jpg" alt="Cabana de pedra com telhado de grama, situada em um campo verde ao lado de um fiorde com montanhas e céu nublado ao fundo.">
+            <p>Cabana de pedra com vista para o fiorde.</p>
+        </div>
+        
+        <div class="card-03">
+            <img src="src/img/imagem-03.jpg" alt="Reflexo de árvores em um lago tranquilo, com vegetação seca e tons quentes ao redor.">
+            <p>Reflexo de árvores em um lago sereno.</p>
+        </div>
+        
+        <div class="card-04">
+            <img src="src/img/imagem-04.jpg" alt="Paisagem de outono no Portão de Brandemburgo, Berlim, com folhas secas e árvores coloridas ao redor em um céu claro de outono."/>
+            <p>Uma vista serena do Portão de Brandemburgo durante o outono.</p>
+        </div>
+
+        <div class="card-05">
+            <img src="src/img/imagem-05.jpg" alt="Paisagem de inverno em uma estrada cercada por árvores cobertas de neve, com um céu nublado e luz suave iluminando a cena."/>
+            <p>Uma estrada tranquila no inverno.</p>
+        </div>
+        
+        <div class="card-06">
+            <img src="src/img/imagem-06.jpg" alt="Casa costeira branca com um barco de madeira na praia, localizada em Lanzarote, sob o céu claro e ensolarado." />
+            <p>Uma charmosa casa costeira branca com um barco de madeira estacionado na praia.</p>
+        </div> <!-- Fechamento da div que estava faltando -->
     </section>
+
+    <!--------------------------------------------// Formulario de contato //------------------------------------------------------------------------------>
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+    
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!--------------------------------------------// Rodapé do Site //------------------------------------------------------------------------------>
+    <footer>
+        <p>Desenvolvido por Rodrigo Santos</p>
+        <p>&copy; 2024 Lens & Light Photography. Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>
