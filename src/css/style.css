@@ -5,3 +5,8 @@
     text-decoration: none;
     list-style: none;
 }
+
+.hero {
+    position: relative;
+    background-image: url('pexels-eberhardgross-1064162.jpg');
+}
