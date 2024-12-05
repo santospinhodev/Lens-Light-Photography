@@ -1,0 +1,18 @@
+<svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="23" fill="#1E1E1E"/>
+<g id="iPhone SE - 1" clip-path="url(#clip0_0_1)">
+<rect width="320" height="1970" transform="translate(-280 -26)" fill="#264653"/>
+<g id="Header">
+<g id="Nav">
+<line id="Line 2" y1="0.5" x2="25" y2="0.5" stroke="#E9C46A"/>
+<line id="Line 3" y1="11.5" x2="25" y2="11.5" stroke="#E9C46A"/>
+<line id="Line 4" y1="22.5" x2="25" y2="22.5" stroke="#E9C46A"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="320" height="1970" fill="white" transform="translate(-280 -26)"/>
+</clipPath>
+</defs>
+</svg>
